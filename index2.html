@@ -4,96 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .container .item {  
-            background-color: red;
-        }
-
-        .main-container >.item { 
-            background-color: green;
-            padding: 10px;
-        }
-
-        .button { 
-            background-color: yellow;
-            padding: 10px;
-        }
-
-        .button.active { 
-            background-color: orange;
-            padding:10px;
-        }
-
-        .button.danger {
-            background-color: red;
-        }
-
-        .item1+ .item2 { 
-            background-color: blue;
-        }
-
-        input[type=text] { 
-            background-color: gray;
-            border: 1px;
-            height: 30px;
-            margin:2px;
-        }
-
-
-    </style>
-
 </head>
+<style>
+    .container .item{
+        background-color: rgb(92, 6, 6);
+        color: white;
+    }
+    .footer-container .item{
+        background-color: rgb(3, 38, 25);
+        color: white;
+    }
+    .main-container >.item{
+        background-color: rgb(171, 123, 216);
+        padding: 10px;
+
+    }
+    .button{
+        background-color: rgb(240, 136, 0);
+        padding: 10px;
+    }   
+    .button.active{
+        background-color: rgb(0, 0, 0);
+        padding: 10px;
+    }
+    .button.warning{
+        background-color: chartreuse;
+        padding: 10px;
+    }
+    .item1 + .item2{
+        background-color: rgb(207, 109, 73);
+    }
+    input[type="text"]{
+        background-color: rgb(22, 53, 111);
+        border: 2px;
+        height: 30px;
+        margin: 2px;
+        
+    }
+</style>
 
 <body>
-    
+    <!-- 1.item เป็นลูก container ชั้นเดียว -->
     <div class="container">
-        Container
+        container
         <div class="item">
-            Item
+            item
         </div>
     </div>
-
-    <div class="footer-container">
-        Container
-        <div>
-            Item
-        </div>
-    </div>
-
     
+    <!-- 2.item เป็นลูก container เเค่ชั้นเดียว -->
     <div class="main-container">
-        Container
+        container
         <div class="item">
-            Item
+            item
             <div class="item">
-                Item1
-            </div>
-            <div class="item"> 
-                Item3
+                item1
             </div>
             <div class="item">
-                Item2
+                item2
+            </div>
+            <div class="item">
+                item3
             </div>
         </div>
     </div>
-
-   
-     <button class="button">ปุ่ม</button>
-     <button class="button active">ปุ่ม</button>
-     <button class="button danger">ปุ่ม</button>
-
-
-      
-       <div class="item1">Item 1</div>
-       <div class="item2">Item 2</div>
-
-       
-        <input type="text" name="username">
-        <input type="text" name="password">
-        <input type="text" name="email">
-
-       
-
-
+    <!-- 3.มี class ติดกัน -->
+    <button class="button">ปุ่ม</button>
+    <button class="button active">ปุ่ม</button>
+    <button class="button warning">ปุ่ม</button>
+    <!-- 4.เพื่อนกับ adjacent -->
+    <div class="item1">item 1</div>
+    <div class="item2">item 2</div>
+    <!-- 5.attribute selector -->
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="text" name="email">
 </body>
 </html>

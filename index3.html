@@ -4,52 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        .button {
-            background-color: yellow;
-            padding: 10px;
-            border: 0;
-        }
-
-        .button:hover { 
-            background-color: orange;
-        }
-
-        .button:active{ 
-            background-color: red;
-        }
-
-        .button:focus { 
-            background-color: green;
-        }
-
-        input:focus { 
-            background-color: blue;
-        }
-
-        .container .item:first-child { 
-            background-color: red;
-        }
-
-        .container .item:nth-child(4) { 
-            background-color: green;
-        }
-
-        .container .item:last-child { 
-            background-color: blue;
-        }
-
-        
-    </style>
-
 </head>
+<style>
+    .button{
+        background-color: rgb(237, 213, 204);
+        padding: 10px;
+        border: 0;
+    }
+    .button:hover{
+        background-color: rgb(155, 55, 55);
+    }
+    .button:active{
+        background-color: rgb(130, 13, 13);
+        color: white;
+    }
+    .button:focus{
+        background-color: rgb(17, 255, 17);
+    }
+    input:focus{
+        background-color: rgb(207, 207, 207);
+    }
+    
+    .container .item:first-child{
+        background-color: rgb(107, 0, 0);
+    }
+    .container .item:nth-child(3){
+        background-color: rgb(255, 179, 37);
+    }
+    .container .item:last-child{
+        background-color: rgb(255, 255, 0);
+    }
+</style>
 
 <body>
-    
+    <!-- hover=ชี้ active=คลิก focus=cursor -->
     <input type="text">
-    <button class="button">Button</button>
-
+    <button class="button">button</button>
     <div class="container">
         <div class="item">item1</div>
         <div class="item">item2</div>
